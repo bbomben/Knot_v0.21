@@ -1,3 +1,5 @@
-export default {
-  base: '/Knot_2.0/',
-}
+import { defineConfig } from 'vite'
+
+export default defineConfig({
+  base: '/Knot_v0.21/'
+})
