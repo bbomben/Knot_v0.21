@@ -129,7 +129,7 @@ gui.add({ increase: () => { params.countZ = Math.min(5, params.countZ + 1); crea
 
 /* gui.add(params, 'rebuild'); */
 
-loader.load('./module-sample.glb', (gltf) => {
+loader.load('module-sample.glb', (gltf) => {
   sourceModel = gltf.scene;
   sourceModel.traverse(n => { if (n.isMesh) n.castShadow = true; });
   sourceModel.scale.set(params.scale, params.scale, params.scale);
